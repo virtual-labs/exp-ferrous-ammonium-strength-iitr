@@ -1,39 +1,72 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "During the titration, what is the role of K₂Cr₂O₇?",
+    "answers": {
+      "a": "Reducing agent",
+      "b": "Oxidizing agent",
+      "c": "Acidifying agent",
+      "d": "Indicator"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What is the oxidation state of chromium in K₂Cr₂O₇ before the titration starts?",
+    "answers": {
+      "a": "+2",
+      "b": "+6",
+      "c": "+3",
+      "d": "+5"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What is the purpose of adding potassium iodide (KI) in the titration of CuSO₄ with sodium thiosulfate?",
+    "answers": {
+      "a": "To oxidize the thiosulfate",
+      "b": "To reduce the copper ion",
+      "c": "To form a complex with copper ion",
+      "d": "To form iodine which then reacts with thiosulfate"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "Which product is formed from the reduction of K₂Cr₂O₇ during the titration?",
+    "answers": {
+      "a": "CrO₄²⁻",
+      "b": "Cr⁺",
+      "c": "Cr²⁺",
+      "d": "Cr³⁺"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "The color of the solution changes to blue at the endpoint of the titration because:",
+    "answers": {
+      "a": "The solution is acidic",
+      "b": "When the solution turns colorless",
+      "c": "The reaction is complete",
+      "d": "The indicator reacts with Fe²⁺"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "The molarity of FAS solution can be calculated if the volume and molarity of K₂Cr₂O₇ solution are known. This involves using:",
+    "answers": {
+      "a": "Density of the solutions",
+      "b": "Temperature of the solutions",
+      "c": "Pressure of the solutions",
+      "d": "Mole ratio from the balanced equation"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "What is the stoichiometric coefficient of Fe²⁺ in the balanced redox reaction with K₂Cr₂O₇?",
+    "answers": {
+      "a": "3",
+      "b": "4",
+      "c": "6",
+      "d": "5"
+    },
+    "correctAnswer": "c"
+  }
+]
