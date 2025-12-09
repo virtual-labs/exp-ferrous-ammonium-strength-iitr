@@ -1,39 +1,71 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "text": "Which alternate acid can we use?",
+    "options": ["a. H₃PO₄", "b. HCl", "c. HNO₃", "d. HClO₄"],
+    "answer": "392"
+  },
+
+  {
+    "id": 2,
+    "text": "Which of the following is the chemical formula for Ferrous Ammonium Sulphate?",
+    "options": ["a. FeSO₄", "b. (NH₄)₂SO₄", "c. K₂Cr₂O₇", "d. Fe(NH₄)₂SO₄"],
+    "answer": "900"
+  },
+
+  {
+    "id": 3,
+    "text": "The titration between FAS and K₂Cr₂O₇ is an example of:",
+    "options": ["a. Acid–base titration", "b. Precipitation titration", "c. Redox titration", "d. Complexometric titration"],
+    "answer": "1584"
+  },
+
+  {
+    "id": 4,
+    "text": "Potassium Dichromate acts:",
+    "options": ["a. As an indicator", "b. As a reducing agent", "c. As an oxidizing agent", "d. As a buffer"],
+    "answer": "2475"
+  },
+
+  {
+    "id": 5,
+    "text": "What is the role of H₂SO₄ in this titration?",
+    "options": ["a. To provide acidic medium", "b. To act as a solvent", "c. To act as an indicator", "d. To oxidize FAS"],
+    "answer": "3492"
+  },
+
+  {
+    "id": 6,
+    "text": "In the reaction between FAS and K₂Cr₂O₇, Fe²⁺ is converted to:",
+    "options": ["a. Fe", "b. Fe³⁺", "c. Fe²⁺", "d. Fe⁰"],
+    "answer": "4802"
+  },
+
+  {
+    "id": 7,
+    "text": "What is the equivalent weight of K₂Cr₂O₇?",
+    "options": ["a. 48 g/eq", "b. 49 g/eq", "c. 50 g/eq", "d. 52 g/eq"],
+    "answer": "6272"
+  },
+
+  {
+    "id": 8,
+    "text": "The endpoint of the titration between FAS and K₂Cr₂O₇ can be detected using:",
+    "options": ["a. Phenolphthalein", "b. Diphenylamine", "c. Methyl orange", "d. Litmus paper"],
+    "answer": "7938"
+  },
+
+  {
+    "id": 9,
+    "text": "Which ion in K₂Cr₂O₇ is reduced during the titration with FAS?",
+    "options": ["a. Cr³⁺", "b. Cr⁶⁺", "c. Cr²⁺", "d. Cr⁷⁺"],
+    "answer": "9800"
+  },
+
+  {
+    "id": 10,
+    "text": "What is the color change observed at the endpoint of the titration using diphenylamine as the indicator?",
+    "options": ["a. Blue to green", "b. Yellow to red", "c. Colorless to blue", "d. Pink to colorless"],
+    "answer": "11979"
+  }
+]
