@@ -1,4 +1,3 @@
- #### Please attempt the following questions
 
 <br>
 
