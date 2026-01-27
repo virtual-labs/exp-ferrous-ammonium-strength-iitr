@@ -1,0 +1,111 @@
+[
+  {
+    "question": "Which alternate acid can we use?",
+    "answers": {
+      "a": "H₃PO₄",
+      "b": "HCl",
+      "c": "HNO₃",
+      "d": "HClO₄"
+    },
+    "correctAnswer": "b"
+  },
+
+  {
+    "question": "Which of the following is the chemical formula for Ferrous Ammonium Sulphate?",
+    "answers": {
+      "a": "FeSO₄",
+      "b": "(NH₄)₂SO₄",
+      "c": "K₂Cr₂O₇",
+      "d": "Fe(NH₄)₂SO₄"
+    },
+    "correctAnswer": "d"
+  },
+
+  {
+    "question": "The titration between FAS and K₂Cr₂O₇ is an example of:",
+    "answers": {
+      "a": "Acid–base titration",
+      "b": "Precipitation titration",
+      "c": "Redox titration",
+      "d": "Complexometric titration"
+    },
+    "correctAnswer": "c"
+  },
+
+  {
+    "question": "Potassium Dichromate acts:",
+    "answers": {
+      "a": "As an indicator",
+      "b": "As a reducing agent",
+      "c": "As an oxidizing agent",
+      "d": "As a buffer"
+    },
+    "correctAnswer": "c"
+  },
+
+  {
+    "question": "What is the role of H₂SO₄ in this titration?",
+    "answers": {
+      "a": "To provide acidic medium",
+      "b": "To act as a solvent",
+      "c": "To act as an indicator",
+      "d": "To oxidize FAS"
+    },
+    "correctAnswer": "a"
+  },
+
+  {
+    "question": "In the reaction between FAS and K₂Cr₂O₇, Fe²⁺ is converted to:",
+    "answers": {
+      "a": "Fe",
+      "b": "Fe³⁺",
+      "c": "Fe²⁺",
+      "d": "Fe⁰"
+    },
+    "correctAnswer": "b"
+  },
+
+  {
+    "question": "What is the equivalent weight of K₂Cr₂O₇?",
+    "answers": {
+      "a": "48 g/eq",
+      "b": "49 g/eq",
+      "c": "50 g/eq",
+      "d": "52 g/eq"
+    },
+    "correctAnswer": "a"
+  },
+
+  {
+    "question": "The endpoint of the titration between FAS and K₂Cr₂O₇ can be detected using:",
+    "answers": {
+      "a": "Phenolphthalein",
+      "b": "Diphenylamine",
+      "c": "Methyl orange",
+      "d": "Litmus paper"
+    },
+    "correctAnswer": "b"
+  },
+
+  {
+    "question": "Which ion in K₂Cr₂O₇ is reduced during the titration with FAS?",
+    "answers": {
+      "a": "Cr³⁺",
+      "b": "Cr⁶⁺",
+      "c": "Cr²⁺",
+      "d": "Cr⁷⁺"
+    },
+    "correctAnswer": "b"
+  },
+
+  {
+    "question": "What is the color change observed at the endpoint of the titration using diphenylamine as the indicator?",
+    "answers": {
+      "a": "Blue to green",
+      "b": "Yellow to red",
+      "c": "Colorless to blue",
+      "d": "Pink to colorless"
+    },
+    "correctAnswer": "c"
+  }
+]
