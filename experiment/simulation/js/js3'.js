@@ -1,8 +1,8 @@
-let normality_titrant;// normality of the soln in flask (N)-----------------N1 ,  which is unknown
-let volume_titrant; // Volume of soln added from burette determines the colour changed when vadded is equal to it(in mL)-------------------------V1  which is find after titration
+let normality_titrant;// normality of the soln in flask (N)-----------------N1
+let volume_titrant; // Volume of soln added from burette determines the colour changed when vadded is equal to it(in mL)-------------------------V1
 let vadded = 0; // Volume of liquid added from burette increases with burette open(in mL)
 let normality_titrate = 1;//normality of titrate in burette(in N) Between 0-2N for this simulation-----------------------------N2
-let volume_titrate = 8;//volume of titrate present in the flask with indicator(in ml)  Between 1-15ml for this Simulation--------V1
+let volume_titrate = 8;//volume of titrate present in the flask with indicator(in ml)  Between 1-15ml for this Simulation--------V2
 
 let equivalencePointVolume; // The volume of silver nitrate at the equivalence point (to be calculated)
 let titrationFinished = false; // A flag to indicate if the titration is finished
@@ -10,7 +10,7 @@ let titrationFinished = false; // A flag to indicate if the titration is finishe
 let size; // For setting the size of the window
 
 let shakingRotation = 0;//Variable to set shaking initially 
-let shakingRotationSpeed = 0.10;//Shaking speed
+let shakingRotationSpeed = 0.15;//Shaking speed
 let flaskTouched = false;// Setting initially value of flask touched to false
 let bureteTouched = false;//Setting initially value of burette touched to false
 let liquidLevel;//variable for level of liquid in the burette
@@ -72,6 +72,7 @@ let dropIntervalID;
 
 
 
+
 function preload() {
   bureteImg = loadImage('images/burette51.png', loaded);
   flaskImgbk = loadImage('images/backflask.png', loaded);
@@ -91,6 +92,7 @@ function loaded() {
   loadedImages++;
   if (loadedImages === 5) {
     console.log('loaded success');
+  
   }
 }
 
@@ -128,10 +130,10 @@ function setup() {
   slider3.removeAttribute('disabled'); // Enable the slider3
 
   // To call all sliders 
-  normality_titrate = slider2.value() / 2;
+  normality_titrate = slider2.value() ;
   volume_titrate = slider3.value();
 
-  buretteLiquidColor = color(221, 149, 45);//setting the colour of burette liquid
+  buretteLiquidColor = color(255,255,255, 100);//setting the colour of burette liquid
   liquidLevel = 8 * size;
   flaskheight = 5 * size / 1.1;
   flaskwidth = 3.9 * size / 1.1;
@@ -143,8 +145,8 @@ function setup() {
   flasktouchX = 10.5 * size;
   flasktouchY = 19.5 * size;
 
-  changetint = color(167,239,230);//Defining the net at starting
-  aftercolour = color(218, 68, 116);//Defining the net colour after titration
+  changetint = color(155, 47, 81);//Defining the net at starting
+  aftercolour = color(249, 245, 237);//Defining the net colour after titration
   
   //gifImage.hide();
 
@@ -165,7 +167,6 @@ function setup() {
 
 
   vadded = 0;
-  aftercolour = color(218, 68, 116);//Defining the net colour after titration
 
   //pieceHeight = height / numPieces;
 
@@ -225,7 +226,7 @@ if (showppt==true){
   rect(width / 2 + .7 * size, 12.7 * size, size * 0.65, -liquidLevel*1.35);
   push();
 
-  image(bureteImg, width / 2 - 6.3 * size, .7 * size, 9.88 * size / 1, buretesize * 2.3 * size / 1);
+  image(bureteImg, width / 2 - 6.2 * size-3, .7 * size, 9.88 * size / 1, buretesize * 2.3 * size / 1);
   noStroke();
   pop();
   if (flaskTouched) {
@@ -285,6 +286,8 @@ if (showppt==true){
 
 
   let valueDisplayElement = document.getElementById("valueDisplay");
+  // valueDisplayElement.innerText = window.sharedData.forwardVadded;
+  // console.log(" window.sharedData.forwardVadded---------", window.sharedData.forwardVadded)
   valueDisplayElement.innerText = floor(vadded * 100) / 100 + ' ml';
 
 
@@ -427,7 +430,6 @@ function funflasktouched() {
 // }
 
 function start() {
-
   // Get the location of the canvas
   normality_titrate = slider2.value() ;
   volume_titrate = slider3.value();
@@ -439,14 +441,14 @@ function start() {
 
   //
   buretesize = buretesize + 0.1;
-  normality_titrant = random(0.7, 0.97);
+  normality_titrant = random(0.1, .2);
   console.log("Normality =", normality_titrant);
   //Calculating the height for change colour
   volume_titrant = ((normality_titrant) * volume_titrate) / (normality_titrate*10);
   console.log("Volume Required", volume_titrant);
   bureteTouched = !bureteTouched;
 
-  dropIntervalID = setInterval(addLiquidDrop, liquidDropInterval);
+  dropIntervalID =setInterval(addLiquidDrop, liquidDropInterval);
   slider2.attribute('disabled', true);
   slider3.attribute('disabled', true);
 
@@ -461,7 +463,7 @@ function drawppt(){
   size_vary = Math.floor(random(0.2152,0.2511)*size);
   size_vary2 = Math.floor(random(0.2152,0.2511)*size);
   frameRate(30); 
-  fill(170, 74, 68,255); // Set the fill color to red
+  fill(0, 164, 180, 100); // Set the fill color to red
   noStroke(); 
   const upperBound = Math.floor(random(1,2)+number*1.25-5) ;
 
@@ -476,31 +478,64 @@ function drawppt(){
     }
 }
 
+// function nextpressed() {
+//   console.log('Hi')
+
+//  // Your JavaScript code
+//  //var jsVariable = "Hello, PHP!"; // Your value to be sent
+
+//  // Using the Fetch API to send a POST request
+//  fetch('send.php', {
+//    method: 'POST',
+//    headers: {
+//      'Content-Type': 'application/json',
+//    },
+//    body: JSON.stringify({ data1: normality_titrate, data2: volume_titrate, data3: vadded, data4: normality_titrant,data5: volume_titrant }),
+//  })
+//    .then(response => {
+//      if (response.ok) {
+//        return response.json();
+//      } else {
+//        throw new Error('Network response was not ok');
+//      }
+//    })
+//    .then(data => {
+//      console.log('Response from server (Page 1):', data);
+
+//      // Check for a success message or any other condition
+//      if (data.message === 'Value received successfully (Page 2)') {
+//        // Redirect to the second page after processing
+//        window.location.href = 'index2.html';
+//      } else {
+//        console.error('Unexpected server response:', data);
+//      }
+//    })
+//    .catch(error => {
+//      console.error('Error:', error);
+//    });
+
+
+// }
 function calculateN1() {
 
   if(calculate>0){
-  const n2 = parseFloat(document.getElementById('n1').value);
+  const n2 = parseFloat(document.getElementById('n2').value);
   const v1 = parseFloat(document.getElementById('v1').value);
   const v2 = parseFloat(document.getElementById('v2').value);
-  
-  
 
   if (isNaN(n2) || isNaN(v1) || isNaN(v2)) {
       document.getElementById('result').innerHTML = "Please enter valid numbers.";
       return;
   }
 
-  const n1 = ((n2 * v1) / v2)*55.85;
-   document.getElementById('result').innerHTML = `
-      <strong>Formula Used: N<sub>1</sub>V<sub>1</sub> = N<sub>2</sub>V<sub>2</sub></strong><br>
-      The calculated value of N1 is: <b>${n1.toFixed(2)} g/L</b>
-    `;
+  const n1 = ((n2 * v1) / v2)*63.5;
+
+  document.getElementById('result').innerHTML = `
+  <strong>Formula Used: M<sub>1</sub>V<sub>1</sub> = M<sub>2</sub>V<sub>2</sub></strong><br>
+  The calculated value of N1 is: ${n1.toFixed(2)} g/L`;
   calculate--
   } else{
-    console.log("Error ")
+    console.log("Error ",calculate)
     alert("First perform the experiment")
   }
 }
-
-
-
