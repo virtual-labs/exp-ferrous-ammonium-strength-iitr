@@ -18,6 +18,15 @@
 5. Titrate it against K₂Cr₂O₇ solution till the color changes from green to purple-red.  
 6. Repeat the same procedure and get the concordant readings.  
 
+#### **Slide-1 Procedure**
+1. Add few drops of N-PAA (N-phenyle anthranilic acid) indicator in the conical flask
+2. The colour of solution does not change.
+
+#### **Slide-1 Procedure**
+1. Set the normality of K2Cr2O7 and volume of FAS solution using slide bar, To start titration click on the start button.
+2. Fix the nozzle opening size by nozzle open slider.Shake the flask while Titrating.
+3. Titrate the solution till it turn to purple colour.
+
 ### **Safety Precautions**
 
 1. Wash the glassware properly with distilled water.  
